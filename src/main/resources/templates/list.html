@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+</head>
+<body>
+
+    <div class="row">
+        <table>
+            <tr th:each="fizzbuzz, stat: ${fizzBuzzes}">
+                <td th:text="${fizzbuzz}"></td>
+            </tr>
+        </table>
+    </div><br/>
+
+    <a href="/">Start new</a>
+
+</body>
+</html>

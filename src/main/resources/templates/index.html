@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+</head>
+<body >
+ <h4>This Fizz-Buzz program will display numbers.</h4>
+ <p>For multiples of three print “Fizz” instead of the number and for the multiples of five print “Buzz”.
+     For numbers which are multiples of both three and five print “FizzBuzz”.</p>
+<form action="#" th:action="@{/process}" th:object="${fizzbuzz}" method="post">
+
+    Start Number : <input type="number" th:field="*{start}"/>
+    <span th:if="${#fields.hasErrors('start')}" th:errors="*{start}"></span><br />
+
+    End Number : <input type="number" th:field="*{end}"/><br/>
+
+    <input type="submit" value="Submit" />
+</form>
+</body>
+</html>
