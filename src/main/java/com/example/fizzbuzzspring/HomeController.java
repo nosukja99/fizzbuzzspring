@@ -16,7 +16,7 @@ import java.util.ArrayList;
 @Controller
 public class HomeController {
 
-    FizzBuzz fizzBuzz = new FizzBuzz();
+
 
     @GetMapping("/")
     public String userInput(Model model)

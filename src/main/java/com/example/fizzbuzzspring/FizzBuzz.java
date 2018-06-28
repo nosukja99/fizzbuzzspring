@@ -13,6 +13,7 @@ public class FizzBuzz {
 
     @Min(1)
     private int end;
+
     private ArrayList<String> print;
 
 
